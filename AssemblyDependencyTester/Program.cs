@@ -18,6 +18,10 @@ namespace AssemblyDependencyTester
             Console.WriteLine(mainAsm);
             var appType = mainAsm.GetExportedTypes().First(type => type.BaseType.Equals(typeof(FxApp)));
             var app = Activator.CreateInstance(appType) as FxApp;
+            foreach(var asm in appType.Assembly.GetReferencedAssemblies())
+            {
+                var loadedAsm = Assembly.Load(asm.FullName);
+            }
             app.Initialize();
         }
     }

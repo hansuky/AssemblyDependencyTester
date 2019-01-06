@@ -4,6 +4,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssemblyDependencyTester", "AssemblyDependencyTester\AssemblyDependencyTester.csproj", "{E018EE2A-053A-42CA-9F28-B91867A2C815}"
+	ProjectSection(ProjectDependencies) = postProject
+		{330E9F19-BE49-438C-925F-586C78C4CCC0} = {330E9F19-BE49-438C-925F-586C78C4CCC0}
+		{496E7465-8CE3-4AFC-98A3-EDA5482777F2} = {496E7465-8CE3-4AFC-98A3-EDA5482777F2}
+		{D26CD7B8-3F07-4055-9883-F1AA964D8B33} = {D26CD7B8-3F07-4055-9883-F1AA964D8B33}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainClassLibrary", "MainClassLibrary\MainClassLibrary.csproj", "{D26CD7B8-3F07-4055-9883-F1AA964D8B33}"
 EndProject
